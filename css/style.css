@@ -63,14 +63,23 @@ header {
     background-color: #fff;
     font-size: 12px;
   }
-  nav > ul > li:hover>ul{
+  nav > ul > li:hover > ul {
     display: flex;
-    >li:hover>a{
+    > li:hover > a {
       color: #8490ff;
     }
   }
   nav > ul > li > ul > li {
     padding: 10px 100px 10px 5px;
+  }
+  /* menu level3 */
+  nav > ul > li > ul > li > ul {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 200%;
+    background-color: #fff;
+    font-size: 12px;
   }
 }
 /* main style */
