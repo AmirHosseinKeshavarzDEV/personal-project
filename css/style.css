@@ -32,13 +32,14 @@ header {
   * {
     vertical-align: middle;
   }
+  /* menu level 1 */
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   nav > ul > li > a {
-    padding: 15px;
+    padding: 20px 10px;
     font-size: 13px;
   }
   ul > li {
@@ -49,11 +50,29 @@ header {
   nav > ul > li > a:hover {
     color: #007bff;
   }
+  /* menu level 2 */
+  nav > ul > li {
+    position: relative;
+  }
+  nav > ul > li > ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 200%;
+    background-color: #fff;
+    font-size: 12px;
+  }
+  nav > ul > li:hover>ul{
+    display: flex;
+    >li:hover>a{
+      color: #8490ff;
+    }
+  }
+  nav > ul > li > ul > li {
+    padding: 10px 100px 10px 5px;
+  }
 }
-#first-link:active {
-  color: #8490ff;
-}
-
 /* main style */
 #main-top {
   width: 100%;
