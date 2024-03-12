@@ -1,6 +1,6 @@
 /* general styles style */
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
 }
 body {
@@ -70,17 +70,17 @@ header {
     }
   }
   nav > ul > li > ul > li {
-    padding: 10px 100px 10px 5px;
+    padding: 10px 100px 10px 20px;
   }
   /* menu level3 */
-  nav > ul > li > ul > li > ul {
+  /* nav > ul > li > ul > li > ul {
     display: none;
     flex-direction: column;
     position: relative;
     top: 200%;
     background-color: #fff;
     font-size: 12px;
-  }
+  } */
 }
 /* main style */
 #main-top {
